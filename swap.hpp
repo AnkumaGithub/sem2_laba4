@@ -16,11 +16,11 @@ void mySwap(T& a, T& b) {
 template <typename Container>
 std::string containerToString(const Container& c) {
     std::ostringstream oss;
-    oss << "[";
+    oss << "\"";
     for (auto it = c.begin(); it != c.end(); ++it) {
         if (it != c.begin()) oss << ", ";
         oss << *it;
     }
-    oss << "]";
+    oss << "\"";
     return oss.str();
 }
